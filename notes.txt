@@ -1,0 +1,45 @@
+TASK DAY 9 - Adding tools , resources to build custom MCP server using python
+c**Key Points on MCP Server**
+
+1. **Purpose**:
+   * MCP is a lightweight protocol and framework designed to create modular AI assistants and tools.
+   * It allows defining `tools`, `resources`, and `files` that AI models can interact with programmatically.
+
+2. **Core Concepts**:
+   * **@mcp.tool**: Registers a function that performs an action. Often used for commands (e.g., add_note).
+   * **@mcp.resource**: Registers a function that fetches or computes a resource that the AI can read from.
+   * **@mcp.file**: Enables AI to read/write from files in a controlled way.
+
+3. **Interoperability**:
+   * MCP tools and resources can be invoked by AI models (e.g., GPT) during runtime, allowing models to interact with code, systems, and files dynamically.
+   * This bridges the gap between language models and live systems (e.g., note storage, API interaction, local tools).
+
+4. **Security & Permissions**:
+   * Only explicitly defined tools/resources are accessible to AI.
+   * You control exactly what data and actions the AI can interact with, reducing risk.
+
+5. **Persistence**:
+   * Notes, files, or data saved using MCP tools/resources can be persisted across sessions.
+   * This enables assistant memory, logs, or knowledge base functionalities.
+
+6. **Use Cases**:
+   * Sticky note apps
+   * To-do list managers
+   * Local assistant integrations
+   * Developer tooling
+   * Context-aware AI agents
+
+7. **Lightweight & Pythonic**:
+   * Built in Python with minimal setup.
+   * Functions are annotated with decorators, making it readable and easy to maintain.
+MCP Server Summary - Day 9: MCP is a lightweight Python framework for creating AI assistant tools using @mcp.tool, @mcp.resource, and @mcp.file decorators. Enables secure, persistent interactions between AI models and external systems. Key use cases: note apps, task managers, developer tools, context-aware agents.
+IPL Note 1: The Indian Premier League (IPL) is a professional Twenty20 cricket league in India, founded in 2008 by the Board of Control for Cricket in India (BCCI). It's one of the most-watched cricket leagues globally.
+IPL Note 2: The league currently consists of 10 teams representing different cities: Mumbai Indians, Chennai Super Kings, Royal Challengers Bangalore, Kolkata Knight Riders, Delhi Capitals, Punjab Kings, Rajasthan Royals, Sunrisers Hyderabad, Gujarat Titans, and Lucknow Super Giants.
+IPL Note 3: Mumbai Indians are the most successful team with 5 IPL titles (2013, 2015, 2017, 2019, 2020), followed by Chennai Super Kings with 4 titles (2010, 2011, 2018, 2021). These two teams have dominated the tournament's history.
+IPL Note 4: The IPL follows a player auction system where teams bid for players. The mega auction happens every 3-4 years, while smaller auctions occur annually. Teams have salary caps and retention rules for maintaining squad composition.
+IPL Note 5: Key IPL legends include MS Dhoni (Chennai Super Kings captain), Virat Kohli (Royal Challengers Bangalore), Rohit Sharma (Mumbai Indians captain), and AB de Villiers. These players have defined IPL cricket with their performances and leadership.
+IPL Note 6: The tournament typically runs from March/April to May/June each year. The format includes a double round-robin league stage followed by playoffs: Qualifier 1, Eliminator, Qualifier 2, and the Final. Top 4 teams qualify for playoffs.
+IPL Note 7: IPL has significantly boosted cricket's commercial value, with billion-dollar broadcast deals and massive sponsorships. It has created opportunities for young Indian cricketers and provides a platform for international players to showcase their T20 skills.
+IPL Note 8: Notable IPL records include Chris Gayle's highest individual score of 175* (2013), Lasith Malinga's 4 wickets in 4 balls, and AB de Villiers' fastest century in 43 balls. These moments have become legendary in T20 cricket history.
+IPL Note 9: The league has faced controversies including the 2013 spot-fixing scandal that led to Chennai Super Kings and Rajasthan Royals being suspended for two years (2016-2017). However, it has maintained its popularity and integrity through reforms.
+IPL Note 10: IPL has revolutionized cricket globally, inspiring similar T20 leagues worldwide like Big Bash League (Australia), Caribbean Premier League, and The Hundred (England). It's credited with making cricket more entertainment-focused and commercially viable.

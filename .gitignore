@@ -1,0 +1,19 @@
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# Python version tracking
+.python-version
+
+# VSCode settings
+.vscode/
+
+# Lock files (specific to dependency managers)
+uv.lock
+
+# OS-generated files
+.DS_Store
+Thumbs.db
