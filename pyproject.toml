@@ -1,7 +1,7 @@
 [project]
 name = "mcp-python-server"
 version = "0.1.0"
-description = "Add your description here"
+description = "AI sticky notes MCP server"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
