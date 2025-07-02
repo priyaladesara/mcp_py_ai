@@ -42,8 +42,6 @@ Follow these steps to make Claude Desktop use your custom MCP server as a local 
 1. Download and install [Claude Desktop](https://www.anthropic.com).
 2. Open Claude Desktop and make sure it’s working.
 
----
-
 ### 2️ Locate Claude Desktop Config Folder
 
 On **Windows**, the config folder is usually:
@@ -68,18 +66,19 @@ On macOS, it’s usually:
 {
   "tools": [
     {
-      "name": "ServerName",
+      "name": "StickyNotesServer",
       "type": "mcp",
       "mcp": {
         "url": "http://localhost:8000",
         "headers": {}
       }
     }
+  ]
 }
+
 ```
 
-
-##  Quick Start
+## Quick Start
 
 ### 1.Clone the Repository
 
@@ -88,18 +87,27 @@ git clone https://github.com/your-org/ai-sticky-notes.git
 cd ai-sticky-notes
 ```
 
-### 2.Install dependency
+### 2.Adding MCP to your python project
 
+ create a uv-managed project :
+
+   ```bash
+   uv init mcp-server-demo
+   cd mcp-server-demo
+   ```
+
+Then add MCP to your project dependencies:
+
+   ```bash
+   uv add "mcp[cli]"
+   ```
+
+Alternatively, for projects using pip for dependencies:
 ```bash
-pip install -r requirement.txt
+pip install "mcp[cli]"
 ```
 
-### 3.Run MCP Server
-
-```bash
-python main.py
-```
-### 4. Example Usage
+### 3. Example Usage
 In Claude Desktop, you can run:
 
 - “Add a note: Buy groceries tomorrow”
